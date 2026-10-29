@@ -1,0 +1,518 @@
+{
+  "prediction": "<=50K",
+  "samples": 32561,
+  "positive": 7841,
+  "depth": 0,
+  "feature": "capital_gain",
+  "threshold": 7688.0,
+  "category": null,
+  "score": 0.2932343985453742,
+  "left": {
+    "prediction": "<=50K",
+    "samples": 31706,
+    "positive": 7001,
+    "depth": 1,
+    "feature": "marital_status",
+    "threshold": null,
+    "category": "Married-civ-spouse",
+    "score": 0.159648483890236,
+    "left": {
+      "prediction": "<=50K",
+      "samples": 14417,
+      "positive": 6142,
+      "depth": 2,
+      "feature": "capital_gain",
+      "threshold": 7298.0,
+      "category": null,
+      "score": 0.17628204322212934,
+      "left": {
+        "prediction": "<=50K",
+        "samples": 14133,
+        "positive": 5858,
+        "depth": 3,
+        "feature": "capital_gain",
+        "threshold": 5013.0,
+        "category": null,
+        "score": 0.17707855856889992,
+        "left": {
+          "prediction": "<=50K",
+          "samples": 13767,
+          "positive": 5497,
+          "depth": 4,
+          "feature": "education_num",
+          "threshold": 12.5,
+          "category": null,
+          "score": 0.09752121583994335,
+          "left": {
+            "prediction": "<=50K",
+            "samples": 9979,
+            "positive": 2961,
+            "depth": 5,
+            "feature": "education_num",
+            "threshold": 7.5,
+            "category": null,
+            "score": 0.049418275504195995,
+            "left": {
+              "prediction": "<=50K",
+              "samples": 1533,
+              "positive": 145,
+              "depth": 6,
+              "feature": "hours_per_week",
+              "threshold": 20.0,
+              "category": null,
+              "score": 0.018108390896986487,
+              "left": {
+                "prediction": "<=50K",
+                "samples": 96,
+                "positive": 1,
+                "depth": 7
+              },
+              "right": {
+                "prediction": "<=50K",
+                "samples": 1437,
+                "positive": 144,
+                "depth": 7,
+                "feature": "age",
+                "threshold": 36.0,
+                "category": null,
+                "score": 0.015202866898797318,
+                "left": {
+                  "prediction": "<=50K",
+                  "samples": 444,
+                  "positive": 19,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": "<=50K",
+                  "samples": 993,
+                  "positive": 125,
+                  "depth": 8
+                }
+              }
+            },
+            "right": {
+              "prediction": "<=50K",
+              "samples": 8446,
+              "positive": 2816,
+              "depth": 6,
+              "feature": "age",
+              "threshold": 24.0,
+              "category": null,
+              "score": 0.056959008366405356,
+              "left": {
+                "prediction": "<=50K",
+                "samples": 345,
+                "positive": 19,
+                "depth": 7,
+                "feature": "hours_per_week",
+                "threshold": 40.0,
+                "category": null,
+                "score": 0.037647819242386624,
+                "left": {
+                  "prediction": "<=50K",
+                  "samples": 263,
+                  "positive": 7,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": "<=50K",
+                  "samples": 82,
+                  "positive": 12,
+                  "depth": 8
+                }
+              },
+              "right": {
+                "prediction": "<=50K",
+                "samples": 8101,
+                "positive": 2797,
+                "depth": 7,
+                "feature": "capital_loss",
+                "threshold": 1887.0,
+                "category": null,
+                "score": 0.0360330735390105,
+                "left": {
+                  "prediction": "<=50K",
+                  "samples": 7895,
+                  "positive": 2668,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": ">50K",
+                  "samples": 206,
+                  "positive": 129,
+                  "depth": 8
+                }
+              }
+            }
+          },
+          "right": {
+            "prediction": ">50K",
+            "samples": 3788,
+            "positive": 2536,
+            "depth": 5,
+            "feature": "capital_loss",
+            "threshold": 1782.5,
+            "category": null,
+            "score": 0.09490541982702189,
+            "left": {
+              "prediction": ">50K",
+              "samples": 3390,
+              "positive": 2151,
+              "depth": 6,
+              "feature": "age",
+              "threshold": 26.0,
+              "category": null,
+              "score": 0.05411293023097767,
+              "left": {
+                "prediction": "<=50K",
+                "samples": 113,
+                "positive": 34,
+                "depth": 7
+              },
+              "right": {
+                "prediction": ">50K",
+                "samples": 3277,
+                "positive": 2117,
+                "depth": 7,
+                "feature": "hours_per_week",
+                "threshold": 15.0,
+                "category": null,
+                "score": 0.051751829204575425,
+                "left": {
+                  "prediction": "<=50K",
+                  "samples": 101,
+                  "positive": 32,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": ">50K",
+                  "samples": 3176,
+                  "positive": 2085,
+                  "depth": 8
+                }
+              }
+            },
+            "right": {
+              "prediction": ">50K",
+              "samples": 398,
+              "positive": 385,
+              "depth": 6,
+              "feature": "capital_loss",
+              "threshold": 1894.5,
+              "category": null,
+              "score": 0.015094245450193274,
+              "left": {
+                "prediction": ">50K",
+                "samples": 82,
+                "positive": 82,
+                "depth": 7
+              },
+              "right": {
+                "prediction": ">50K",
+                "samples": 316,
+                "positive": 303,
+                "depth": 7,
+                "feature": "workclass",
+                "threshold": null,
+                "category": "Private",
+                "score": 0.014080602801902178,
+                "left": {
+                  "prediction": ">50K",
+                  "samples": 177,
+                  "positive": 174,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": ">50K",
+                  "samples": 139,
+                  "positive": 129,
+                  "depth": 8
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "prediction": ">50K",
+          "samples": 366,
+          "positive": 361,
+          "depth": 4,
+          "feature": "age",
+          "threshold": 51.0,
+          "category": null,
+          "score": 0.03961773504832846,
+          "left": {
+            "prediction": ">50K",
+            "samples": 285,
+            "positive": 285,
+            "depth": 5
+          },
+          "right": {
+            "prediction": ">50K",
+            "samples": 81,
+            "positive": 76,
+            "depth": 5
+          }
+        }
+      },
+      "right": {
+        "prediction": ">50K",
+        "samples": 284,
+        "positive": 284,
+        "depth": 3
+      }
+    },
+    "right": {
+      "prediction": "<=50K",
+      "samples": 17289,
+      "positive": 859,
+      "depth": 2,
+      "feature": "education",
+      "threshold": null,
+      "category": "Doctorate",
+      "score": 0.1230264486116378,
+      "left": {
+        "prediction": "<=50K",
+        "samples": 112,
+        "positive": 52,
+        "depth": 3
+      },
+      "right": {
+        "prediction": "<=50K",
+        "samples": 17177,
+        "positive": 807,
+        "depth": 3,
+        "feature": "education",
+        "threshold": null,
+        "category": "Prof-school",
+        "score": 0.09415863050074783,
+        "left": {
+          "prediction": "<=50K",
+          "samples": 141,
+          "positive": 54,
+          "depth": 4
+        },
+        "right": {
+          "prediction": "<=50K",
+          "samples": 17036,
+          "positive": 753,
+          "depth": 4,
+          "feature": "education",
+          "threshold": null,
+          "category": "Masters",
+          "score": 0.04088852771846681,
+          "left": {
+            "prediction": "<=50K",
+            "samples": 669,
+            "positive": 134,
+            "depth": 5,
+            "feature": "hours_per_week",
+            "threshold": 30.0,
+            "category": null,
+            "score": 0.05387514334275972,
+            "left": {
+              "prediction": "<=50K",
+              "samples": 87,
+              "positive": 2,
+              "depth": 6
+            },
+            "right": {
+              "prediction": "<=50K",
+              "samples": 582,
+              "positive": 132,
+              "depth": 6,
+              "feature": "occupation",
+              "threshold": null,
+              "category": "Exec-managerial",
+              "score": 0.051375100615798246,
+              "left": {
+                "prediction": "<=50K",
+                "samples": 129,
+                "positive": 54,
+                "depth": 7
+              },
+              "right": {
+                "prediction": "<=50K",
+                "samples": 453,
+                "positive": 78,
+                "depth": 7,
+                "feature": "age",
+                "threshold": 33.0,
+                "category": null,
+                "score": 0.031557197970551114,
+                "left": {
+                  "prediction": "<=50K",
+                  "samples": 116,
+                  "positive": 7,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": "<=50K",
+                  "samples": 337,
+                  "positive": 71,
+                  "depth": 8
+                }
+              }
+            }
+          },
+          "right": {
+            "prediction": "<=50K",
+            "samples": 16367,
+            "positive": 619,
+            "depth": 5,
+            "feature": "hours_per_week",
+            "threshold": 40.0,
+            "category": null,
+            "score": 0.025230032362550232,
+            "left": {
+              "prediction": "<=50K",
+              "samples": 13095,
+              "positive": 271,
+              "depth": 6,
+              "feature": "occupation",
+              "threshold": null,
+              "category": "Prof-specialty",
+              "score": 0.012679538919607866,
+              "left": {
+                "prediction": "<=50K",
+                "samples": 1009,
+                "positive": 72,
+                "depth": 7,
+                "feature": "age",
+                "threshold": 33.0,
+                "category": null,
+                "score": 0.0376654905257736,
+                "left": {
+                  "prediction": "<=50K",
+                  "samples": 554,
+                  "positive": 11,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": "<=50K",
+                  "samples": 455,
+                  "positive": 61,
+                  "depth": 8
+                }
+              },
+              "right": {
+                "prediction": "<=50K",
+                "samples": 12086,
+                "positive": 199,
+                "depth": 7,
+                "feature": "occupation",
+                "threshold": null,
+                "category": "Exec-managerial",
+                "score": 0.012313564354972887,
+                "left": {
+                  "prediction": "<=50K",
+                  "samples": 859,
+                  "positive": 54,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": "<=50K",
+                  "samples": 11227,
+                  "positive": 145,
+                  "depth": 8
+                }
+              }
+            },
+            "right": {
+              "prediction": "<=50K",
+              "samples": 3272,
+              "positive": 348,
+              "depth": 6,
+              "feature": "capital_loss",
+              "threshold": 1534.0,
+              "category": null,
+              "score": 0.04031296972130573,
+              "left": {
+                "prediction": "<=50K",
+                "samples": 3156,
+                "positive": 311,
+                "depth": 7,
+                "feature": "education",
+                "threshold": null,
+                "category": "Bachelors",
+                "score": 0.0314052370471562,
+                "left": {
+                  "prediction": "<=50K",
+                  "samples": 752,
+                  "positive": 154,
+                  "depth": 8
+                },
+                "right": {
+                  "prediction": "<=50K",
+                  "samples": 2404,
+                  "positive": 157,
+                  "depth": 8
+                }
+              },
+              "right": {
+                "prediction": "<=50K",
+                "samples": 116,
+                "positive": 37,
+                "depth": 7
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "right": {
+    "prediction": ">50K",
+    "samples": 855,
+    "positive": 840,
+    "depth": 1,
+    "feature": "hours_per_week",
+    "threshold": 35.0,
+    "category": null,
+    "score": 0.024239495110017804,
+    "left": {
+      "prediction": ">50K",
+      "samples": 86,
+      "positive": 79,
+      "depth": 2
+    },
+    "right": {
+      "prediction": ">50K",
+      "samples": 769,
+      "positive": 761,
+      "depth": 2,
+      "feature": "age",
+      "threshold": 59.0,
+      "category": null,
+      "score": 0.03720409755036713,
+      "left": {
+        "prediction": ">50K",
+        "samples": 665,
+        "positive": 664,
+        "depth": 3,
+        "feature": "education",
+        "threshold": null,
+        "category": "HS-grad",
+        "score": 0.008449373557354091,
+        "left": {
+          "prediction": ">50K",
+          "samples": 82,
+          "positive": 81,
+          "depth": 4
+        },
+        "right": {
+          "prediction": ">50K",
+          "samples": 583,
+          "positive": 583,
+          "depth": 4
+        }
+      },
+      "right": {
+        "prediction": ">50K",
+        "samples": 104,
+        "positive": 97,
+        "depth": 3
+      }
+    }
+  }
+}

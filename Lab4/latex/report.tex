@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\setmonofont{Arial}
+\newfontfamily\cyrillicfonttt{Arial}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx,booktabs,float,hyperref,xurl,fancyhdr,amsmath,array}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\pagestyle{fancy}\fancyhf{}
+\lhead{Классификация с помощью дерева решений}\rhead{\thepage}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\begin{titlepage}\centering
+\vspace*{3cm}{\Huge\bfseries ОТЧЁТ О ВЫПОЛНЕНИИ ЗАДАНИЯ\par}
+\vspace{1cm}{\LARGE\bfseries Классификация с помощью\\дерева решений\par}
+\vspace{3cm}\fbox{\begin{minipage}{0.78\textwidth}
+Набор данных: \textbf{UCI Adult (Census Income)}\\
+Целевая переменная: \textbf{доход $\leq$50K или $>$50K}\\
+Критерии: \textbf{Information Gain, Gain Ratio, Gini Index}
+\end{minipage}}\vfill 2026
+\end{titlepage}
+
+\section{Формулировка задания}
+Необходимо разработать программу классификации деревом решений с критериями Information Gain, Gain Ratio и Gini Index, построить визуализации деревьев, вычислить accuracy, precision, recall и F1, а также исследовать соотношения обучающей и тестовой выборок от 60:40 до 90:10.
+
+\section{Материалы проекта}
+Исходный код, данные и результаты: \url{https://github.com/FeodorG/data-mining-fundamentals/tree/main/lab3}.
+
+\section{Методика}
+Для числовых признаков перебираются пороги по квантилям, для категориальных --- бинарные проверки равенства. Положительный класс соответствует доходу $>$50K. Дерево ограничено глубиной 8; минимальный размер листа равен 80.
+\[
+IG=H(S)-\sum_i\frac{|S_i|}{|S|}H(S_i),\qquad
+GR=\frac{IG}{SplitInfo}.
+\]
+
+\section{Сравнение критериев}
+\begin{table}[H]\centering
+\caption{Качество на официальной тестовой выборке}
+\begin{tabular}{lrrrr}\toprule
+Критерий & Accuracy & Precision & Recall & F1\\\midrule
+Information Gain & 0{,}851 & 0{,}764 & 0{,}536 & 0{,}630\\
+Gain Ratio & 0{,}849 & 0{,}769 & 0{,}515 & 0{,}617\\
+Gini Index & 0{,}851 & 0{,}769 & 0{,}524 & 0{,}624\\\bottomrule
+\end{tabular}\end{table}
+
+\begin{figure}[H]\centering
+\includegraphics[width=.98\textwidth]{results/tree_information_gain.png}
+\caption{Верхние уровни дерева: Information Gain}
+\end{figure}
+\begin{figure}[H]\centering
+\includegraphics[width=.75\textwidth]{results/tree_gain_ratio.png}
+\caption{Верхние уровни дерева: Gain Ratio}
+\end{figure}
+\begin{figure}[H]\centering
+\includegraphics[width=.98\textwidth]{results/tree_gini.png}
+\caption{Верхние уровни дерева: Gini Index}
+\end{figure}
+
+\section{Влияние размера обучающей выборки}
+\begin{table}[H]\centering
+\begin{tabular}{lrrrr}\toprule
+Обучение:тест & Accuracy & Precision & Recall & F1\\\midrule
+60:40 & 0{,}851 & 0{,}761 & 0{,}551 & 0{,}639\\
+70:30 & 0{,}847 & 0{,}755 & 0{,}533 & 0{,}625\\
+80:20 & 0{,}848 & 0{,}748 & 0{,}547 & 0{,}632\\
+90:10 & 0{,}841 & 0{,}724 & 0{,}544 & 0{,}621\\\bottomrule
+\end{tabular}\end{table}
+\begin{figure}[H]\centering
+\includegraphics[width=.95\textwidth]{results/metrics_by_split.png}
+\caption{Показатели качества при разных соотношениях выборок}
+\end{figure}
+
+\section{Вывод}
+Лучшие accuracy и F1 на официальной тестовой выборке показал Information Gain. Accuracy около 85\% заметно выше recall положительного класса из-за дисбаланса классов. Увеличение доли обучения не дало монотонного улучшения при фиксированной сложности дерева и единственном случайном разбиении.
+\end{document}
